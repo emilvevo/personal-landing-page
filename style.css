@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    display: inline-block;
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
+
+.main {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    float: right;
+    background-color: white;
+}
+
+.name {
+    display: inline-block;
+    margin-right: 10px;
+    color: #343a40;
+    font-size: 80px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.surname {
+    display: inline-block;
+    color: #a2a2a2;
+    font-size: 80px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.about {
+    color: #6c757d;
+    font-size: 24px;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bio {
+    color: #6c757d;
+    font-size: 18px;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35%;
+}
+
+.profile img {
+    display: relative;
+    border: 5px solid #222;
+    width: 200px;
+    height: 200px;
+}
+
+.title {
+    margin: 90px 150px 0 30px;
+}
+
+.about {
+    margin: 0 0 20px 30px;
+}
+
+.bio {
+    margin: 0 0 15px 30px;
+}
+
+.social-links {
+    margin: 30px;
+}
+
+.social-links:hover {
+    color: #a2a2a2 !important;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1040px) {
+    .profile {
+        position: fixed;
+        width: 100%;
+        height: 20px;
+    }
+    .profile img {
+        display: none;
+    }
+    .main {
+        float: left;
+        width: 100%;
+    }
+    .social.profile-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:380px) {
+    * {
+        padding-right: 30px;
+    }
+}
